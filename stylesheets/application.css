@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.alert {
+  background: rgb(245, 245, 245);
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.alert--kind--danger {
+  background: red;
+  color: #fff;
+}
+
+.alert--kind--primary {
+  background: green;
+  color: #fff;
+}
+
+.alert--kind--notice {
+  background: blue;
+  color: #fff;
+}
+
+.alert--closed {
+  opacity: 0;
+}
+
+.alert__content {
+  margin: 0;
+  padding: 0;
+}
+
+.alert__close {
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  margin-left: 20px;
+  opacity: .5;
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-size: 20px;
+}
+
+.alert__close::before {
+  content: '×';
+}
